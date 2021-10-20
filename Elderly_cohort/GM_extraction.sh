@@ -3,10 +3,13 @@
 directory="/data/pt_02133/1-scripts/navigators/"
 cd $directory
 data_folder="/data/pt_02133/incoming/"
-subj_folders="subj_folders.txt"
-maps_folders_MR1="maps_folders_b.txt"
-maps_folders_MR2="maps_folders.txt"
+# select commented out option to run second half of the participants
+# participants divided for convenience and parallelization
+subj_folders="subj_folders.txt" #"subj_folders2.txt"
+maps_folders_MR1="maps_folders_b.txt" #"maps_folders_2b.txt"
+maps_folders_MR2="maps_folders.txt"	#"maps_folders_2.txt"
 
+# select 
 declare -a corrections=("uncorrected/pdw_01/")  #"f0-corrected_varadapt_all/pdw_01/" "f0-corrected_varadapt_virt/pdw_01/"
 
 dir_back="../"
@@ -41,7 +44,7 @@ done
 
 for ind in 0 1 2 3 4; #
 do
-    # load a WM mask
+    # load a GM mask
     
     folder="${maps_folder_array_MR1[$ind]}uncorrected/MPMCalc/"
     cd $folder
