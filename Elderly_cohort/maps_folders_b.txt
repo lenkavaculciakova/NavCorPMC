@@ -1,0 +1,10 @@
+sub-s001/FMRIB/s001_7T_20191128_MR1/anat/MPMs_nav/
+sub-s004/FMRIB/s004_7T_20191216_MR1/anat/MPMs_nav/
+sub-s006/FMRIB/s006_7T_20191218_MR1/anat/MPMs_nav/
+sub-s010/FMRIB/s010_7T_20200210_MR1/anat/MPMs_nav/
+sub-s012/FMRIB/s012_7T_20200225_MR1/anat/MPMs_nav/
+s001/
+s004/
+s006/
+s010/
+s012/
