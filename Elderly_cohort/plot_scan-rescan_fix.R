@@ -75,7 +75,7 @@ txt_dir <- "scan-rescan_CoV/"
 setwd(txt_dir)
 
 # get a list of all text files
-txt_files <- list.files(txt_dir, pattern = "txt$")
+txt_files <- list.files(".", pattern = "txt$")
 
 # load all text files and calculate STDEV of values
 # convert everything to a nice data frame
@@ -87,5 +87,4 @@ df$contrast[indices_to_change] <- 'R2*'
 
 plot_scanrescan(df)
 
-ggsave("scan-rescan.eps", width = 6, height = 4)
-
+ggsave("scan-rescan.tiff", width = 6, height = 4)
