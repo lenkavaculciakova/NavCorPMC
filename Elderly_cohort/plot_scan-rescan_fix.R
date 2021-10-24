@@ -71,7 +71,7 @@ load_txt <- function(path) {
 
 
 # set path to txt files
-txt_dir <- "/data/pt_02133/2-tests/navigators/scan-rescan/CoV_2p/"
+txt_dir <- "scan-rescan_CoV/"
 setwd(txt_dir)
 
 # get a list of all text files
@@ -86,5 +86,6 @@ df$contrast[indices_to_change] <- 'R2*'
 
 
 plot_scanrescan(df)
-ggsave("scan-rescan.png", width = 6, height = 4)
+
+ggsave("scan-rescan.eps", width = 6, height = 4)
 
