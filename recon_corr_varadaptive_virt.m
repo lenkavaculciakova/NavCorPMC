@@ -8,9 +8,13 @@ function recon_corr_varadaptive_virt(rawfile, rawfolder, snrthr, wsmooth, wsnr)
     % Original code by Kornelius Podranski, modifief by Vaculciakova
     % Add paths
     
+    % original location of this script
     addpath('/data/pt_02133/1-scripts/navigators/')
+    % original location of the reconstructon code
     addpath('/data/pt_02133/1-scripts/navigators/image-recon-kpodranski');
+    % mapVBVD is necessary for reading in the raw data, see more in NAVCor.m script
     addpath('/data/pt_02133/1-scripts/navigators/image-recon-kpodranski/mapVBVD');
+    % in-house reconstrunction code uses SPM12
     addpath('/data/pt_02133/1-scripts/spm12/');
     
     directory = '/data/pt_02133/incoming';
