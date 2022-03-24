@@ -1,9 +1,12 @@
+% computing the percentage of traces with low SNR (below threshold)
 addpath('/data/pt_02133/1-scripts/navigators/');
 
 path='/data/pt_02133/incoming';
 participants={'s001', 's004', 's005', 's006', 's007', ...
     's008', 's009', 's010', 's011', 's012'};
 correction = 'f0-corrected_varadapt_virt';
+
+outpath = '/data/pt_02133/2-tests/navigators/';
 
 channels = 32;
 percentage = zeros(length(participants), 4, channels); % 4 = number of measurements
@@ -36,6 +39,8 @@ end
 mean(percentage, 'all')
 std(percentage(:))
 
+mean_perc_across_ch = mean(percentage, 3);
 
+cd(outpath)
 elderly_perc = percentage;
 save('Elderly_perc.mat', 'elderly_perc')

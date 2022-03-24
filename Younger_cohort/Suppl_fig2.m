@@ -1,3 +1,6 @@
+% creating supplementary figure 2
+% the XPACE tools used in this code for reading in the motion logs
+% are a part of XPACE libraries for prospective motion correction system
 addpath('/data/pt_02199/scripts/XPACEtools/XPACEfileIO_tools');
 addpath('/data/pt_02199/scripts/XPACEtools/');
 addpath('/data/pt_02199/scripts/')

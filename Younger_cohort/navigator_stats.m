@@ -1,3 +1,4 @@
+% computing the percentage of traces with low SNR (below threshold)
 addpath('/data/pt_02199/scripts');
 
 path='/data/pt_02199/images_filtered_navs';
